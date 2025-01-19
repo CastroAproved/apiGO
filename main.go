@@ -1,6 +1,6 @@
 package main
 
-import "api/router"
+import "github.com/CastroAproved/apiGO/router"
 
 func main() {
 	router.Initialize()

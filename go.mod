@@ -1,4 +1,4 @@
-module api
+module github.com/CastroAproved/apiGO
 
 go 1.23.4
 
