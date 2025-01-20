@@ -1,0 +1,15 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build with CGO",
+            "type": "shell",
+            "command": "set CGO_ENABLED=1 && go build -o apiGO.exe",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$go"]
+        }
+    ]
+}
