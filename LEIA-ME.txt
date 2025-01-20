@@ -1,0 +1,8 @@
+TEM QUE TER O COMPILADOR GCC 
+mingw64
+
+colocar o path 
+C:\Program Files\Go\bin
+
+
+go install github.com/swaggo/swag/cmd/swag@latest

@@ -2,8 +2,13 @@ package handler
 
 import "github.com/gin-gonic/gin"
 
-func CreateOpeningHandler(etx *gin.Context) {
-	etx.JSON(200, gin.H{
-		"message": "Create opening",
-	})
+func CreateOpeningHandler(ctx *gin.Context) {
+	
+	request := struct{
+		Role string `json:"role"`
+	}{}
+
+	ctx.BindJSON(&request)
+
+	logger.Infof("request receveid: %+v", request)
 }
